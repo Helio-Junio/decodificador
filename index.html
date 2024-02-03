@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="assets/Alura_logo.png">
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__interacao">
+            <textarea id="texto" rows="3" cols="35"></textarea>
+            <div class="apresentacao__interacao__informacao">
+                <img src="assets/ponto_exclamacao.png" alt="ponto de exclamação preto.">
+                <p class="apresentacao__interacao_texto">Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="apresentacao__interacao__button">
+                <button onclick="criptografar()" class="apresentacao__button__btn">Criptografar</button>
+                <button onclick="descriptografar()" id="descriptografar" class="apresentacao__button__btn">Descriptografar</button>
+            </div>
+        </section>
+        <div class="apresentacao__resultado">
+            <img class="apresentacao__resultado__image" id="imagem_lupa" src="assets/personagem_com_lupa.svg" alt="personagem com roupa azul com uma lupa nas mãos.">
+            <h2 class="apresentacao__resultado__titulo" id="texto_titulo_resultado">Nenhuma mensagem encontrada</h2>
+            <p class="apresentacao__resultado__texto" id="texto_resultado" >Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button onclick="copiarTexto()" class="apresentacao__resultado__button">Copiar</button>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Hélio Ferreira.</p>
+    </footer>
+</body>
+</html>
